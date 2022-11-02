@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap");
+
+:root {
+  --Grayishblue: hsl(237, 18%, 59%);
+  --Softred: hsl(345, 95%, 68%);
+
+  --White: hsl(0, 0%, 100%);
+  --Darkdesaturatedblue: hsl(236, 21%, 26%);
+  --Verydarkblue: hsl(235, 16%, 14%);
+  ----blackishBlue: hsl(234, 17%, 12%);
+}
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Text", sans-serif;
+  box-sizing: border-box;
+}
+
+#title {
+  height: 100vh;
+  /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+  background-image: url("images/bg-stars.svg");
+  background-color: var(--Verydarkblue);
+  overflow: hidden;
+  position: relative;
+}
+h1 {
+  color: var(--White);
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 5px;
+}
+.timer-contain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 10%;
+  padding: 0 20%;
+}
+
+.time {
+  color: var(--Softred);
+}
+
+.desc {
+  color: var(--White);
+  text-transform: uppercase;
+  color: var(--Grayishblue);
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: smaller;
+  margin-top: 15%;
+}
+
+.number-contain {
+  background-color: var(--Darkdesaturatedblue);
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 10px var(----blackishBlue);
+}
+
+.time {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+  aspect-ratio: 1/1;
+}
+.social {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.social img {
+    margin: 0 30px;
+}
+.hill {
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: aliceblue;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
